@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Laundry Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Logo</div>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about-us">About Us</a>
+          <a href="#contact-us">Contact Us</a>
+        </div>
+    <div class="username">Username</div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left">
+      <h1>
+        Revitalize Your <br />
+        Clothes with Expert <br />
+        <span>Laundry Services!</span>
+      </h1>
+      <p>
+        From premium dry cleaning to swift wash and fold, we 
+        deliver care and convenience. Schedule a pickup and 
+        rediscover the freshness of your clothes today!
+      </p>
+      <div>
+        
+        <a href="#services" class="btn">📅 Book a service today!</a>
+        </a>    
+      </div>
+    </div>
+    <div class="hero-right">
+      <img 
+      src="https://static.vecteezy.com/system/resources/previews/026/721/193/non_2x/washing-machine-and-laundry-laundry-sticker-png.png" 
+      alt="Laundry Service">
+    </div>
+  </section>
+
+  <section class="overview" id="about">
+    <div class="overview-box">
+      <h1>Our Achievements</h1>
+    </div>
+
+    <div class="overview-box">
+      <h2>15+</h2>
+      <p>Laundry Services</p>
+    </div>
+
+    <div class="overview-box">
+      <h2>240+</h2>
+      <p>Happy Customers</p>
+    </div>
+
+    <div class="overview-box">
+      <h2>2+ Yrs</h2>
+      <p>Experience</p>
+    </div>
+  </section>
+
+<section id="services" class="services-section">
+    <div class="services-container">
+      <div class="services-box">
+        <h2>Our Services</h2>
+        <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+
+        <div class="service-item" data-id="dry-cleaning" data-name="Dry Cleaning" data-price="200">
+          <div class="service-info">
+            <span class="service-icon">🧺</span>
+            <span class="service-name">Dry Cleaning</span>
+          </div>
+          <span class="service-price">₹200.00</span>
+          <button class="service-button">Add Item ⊕</button>
+        </div>
+
+        <div class="service-item" data-id="wash-fold" data-name="Wash & Fold" data-price="100">
+          <div class="service-info">
+            <span class="service-icon">🧺</span>
+            <span class="service-name">Wash & Fold</span>
+          </div>
+          <span class="service-price">₹100.00</span>
+          <button class="service-button">Add Item ⊕</button>
+        </div>
+
+        <div class="service-item" data-id="ironing" data-name="Ironing" data-price="30">
+          <div class="service-info">
+            <span class="service-icon">🧹</span>
+            <span class="service-name">Ironing</span>
+          </div>
+          <span class="service-price">₹30.00</span>
+          <button class="service-button">Add Item ⊕</button>
+        </div>
+
+        <div class="service-item" data-id="stain-removal" data-name="Stain Removal" data-price="500">
+          <div class="service-info">
+            <span class="service-icon">🧴</span>
+            <span class="service-name">Stain Removal</span>
+          </div>
+          <span class="service-price">₹500.00</span>
+          <button class="service-button">Add Item ⊕</button>
+        </div>
+
+        <div class="service-item" data-id="leather-suede" data-name="Leather & Suede Cleaning" data-price="999">
+          <div class="service-info">
+            <span class="service-icon">🧥</span>
+            <span class="service-name">Leather & Suede Cleaning</span>
+          </div>
+          <span class="service-price">₹999.00</span>
+          <button class="service-button">Add Item ⊕</button>
+        </div>
+
+        <div class="service-item" data-id="wedding-dress" data-name="Wedding Dress Cleaning" data-price="2800">
+          <div class="service-info">
+            <span class="service-icon">👗</span>
+            <span class="service-name">Wedding Dress Cleaning</span>
+          </div>
+          <span class="service-price">₹2800.00</span>
+          <button class="service-button">Add Item ⊕</button>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: left; margin-top: 25px; color: #6366f1; font-size: 0.9rem;">
+          <span style="margin-right: 8px;">ℹ</span>
+          <span>Add the items to the cart and book now</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-section">
+      <div class="cart-heading-box">
+        <h3>Added Items</h3>
+      </div>
+
+      <div class="cart-items-box">
+        <div class="empty-cart" id="empty-cart">
+          <div class="empty-cart-icon">ℹ</div>
+          <p>No Items Added</p>
+          <small>Add Items to the cart from the services bar</small>
+        </div>
+
+        <table class="cart-table" id="cart-table" style="display: none;">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Service Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <div class="total-amount">
+          <span>Total Amount</span>
+          <span class="total-price">₹ 0</span>
+        </div>
+      </div>
+
+<div class="book-form-box">
+  <h3>Book Now</h3>
+  <form id="booking-form">
+    <div class="form-group">
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" placeholder="John Doe" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" placeholder="mailid@gmail.com" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="0000000000" required>
+      </div>
+    </div>
+    <button type="submit" class="book-button">Book now</button>
+  </form>
+  <div id="booking-message" class="booking-message"></div>
+  <div class="booknow-warning" id="booknow-warning">
+    <span>⚠</span> Add the items to the cart to book
+  </div>
+</div>
+  </section>
+  <section class="quality-section">
+    <div class="quality-container">
+      <div class="quality-item">
+        
+          <img src="data:image/png;base64,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" alt="premium service img" height="45">
+        
+        <h3>Premium Services</h3>
+        <p>Elevate your wardrobe with our <br>
+          meticulous dry cleaning, <br>
+          ensuring garments look and feel <br>
+          as good as new.</p>
+      </div>
+      <div class="quality-item">
+        <img src="data:image/png;base64,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" alt="quick support img" height="50">
+        <h3>Quick Support</h3>
+        <p>We're committed to providing <br>
+           prompt solutions to ensure your <br>
+            experience is smooth and <br>
+            worry-free</p>
+      </div>
+      <div class="quality-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/45/45910.png" alt="Hassle Free Delivery image" height="50">
+        <h3>Hassle Free Delivery</h3>
+        <p>Enjoy seamless service with our <br>
+           convenlent pickup and delivery <br>
+            options, tailored to your <br>
+             schedule.</p>
+      </div>
+      <div class="quality-item">
+        <img src="data:image/png;base64,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" alt="Affordable Prices images" height="50">
+        <h3>Affordable Prices</h3>
+        <p>Experience exceptional care <br>
+           without breaking the bank - our <br>
+            affordable prices make laundry <br>
+             day stress-free.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <div class="newsletter-content">
+      <h2>Subscribe to our <br> newsletter.</h2>
+    </div>
+
+    <form class="newsletter-form" onsubmit="subscribeNewsletter(); return false;">
+      <input type="text" id="newsletter-name" placeholder="Full name" required>
+      <input type="email" id="newsletter-email" placeholder="Email" required>
+      <button type="submit" class="newsletter-submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h1>Logo</h1>
+        <h4 id="about-us"><b>About us</b></h4>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur. Sed At Congue.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Important Links</h3>
+        <ul class="footer-links">
+  <li><a href="javascript:void(0)">About us</a></li>
+  <li><a href="javascript:void(0)">Contact us</a></li>
+  <li><a href="javascript:void(0)">Privacy Policy</a></li>
+  <li><a href="javascript:void(0)">Terms of use</a></li>
+  <li><a href="javascript:void(0)">Refund Policy</a></li>
+</ul>
+
+      </div>
+      <div class="footer-column">
+        <h3 id="contact-us">Contact</h3>
+        <p>mail@site.com</p>
+        <p>+91 91234 56789</p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="javascript:void(0)"><img src="https://cdn-icons-png.flaticon.com/128/717/717392.png" alt="inst icon" height="20"></a>
+          <a href="javascript:void(0)"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968973.png" alt="facebook icon" height="20"></a>
+          <a href="javascript:void(0)"><img src="https://cdn-icons-png.flaticon.com/128/2582/2582557.png" alt="twitter icon" height="20"></a>
+          <a href="javascript:void(0)"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384086.png" alt="youtube logo" height="20"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-circle"></div>
+  </footer>
+
+  <script src="script.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  </body>
+</body>
+</html>
